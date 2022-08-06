@@ -1,0 +1,229 @@
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.notForecast {
+    width: 100%;
+}
+
+.card {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(144, 152, 197);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-header {
+
+}
+
+button {
+    padding: 7px;
+    font-weight: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    border-width: 1px;
+}
+input {
+    background-color: rgb(196, 212, 212);
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 95%;
+    margin-top: 10px !important;
+    font-weight: 15px;
+}
+input:hover {
+    background-color: rgb(230, 225, 167);
+}
+
+.apiReturn {
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.forecastContainer {
+    width: 100%;
+    max-height: 100px;
+}
+
+#forecastResults {
+    display: grid;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.notForecast {
+    width: 100%;
+}
+
+.card {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(144, 152, 197);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+button {
+    padding: 7px;
+    font-weight: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    border-width: 1px;
+    background-color: rgb(233, 233, 233);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(230, 225, 167);
+}
+
+input {
+    background-color: rgb(196, 212, 212);
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 95%;
+    margin-top: 10px !important;
+    font-weight: 15px;
+}
+input:hover {
+    background-color: rgb(230, 225, 167);
+}
+
+#weatherResults {
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 15px !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap !important;
+}
+
+.forecastResults {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(144, 152, 197), white);
+    border-radius: 20px;
+}
+#forecastResults {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.apiReturn {
+    width: 10% !important;
+    height: 150px !important;
+    margin: 5px;
+    padding: 5px;
+    background-image: linear-gradient(white, rgb(144, 152, 197));
+    border-radius: 10px;
+}
+
+.button2 {
+    width: 150px;
+    font-weight: bold;
+    border-radius: 20px !important;
+}
+.button2 a {
+    text-decoration: none;
+}
+.button2 a:visited {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1080px) {
+
+
+    body {
+        background-size: auto 3000px;
+    }
+
+    .grid-container {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .forecastResults {
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .apiReturn {
+        width: 20% !important;
+        height: 200px !important;
+    }
+}
